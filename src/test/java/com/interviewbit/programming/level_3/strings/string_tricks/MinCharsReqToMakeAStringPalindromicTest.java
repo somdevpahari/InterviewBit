@@ -7,10 +7,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class MinCharsReqToMakeAStringPalindromicTest {
 
-    MinCharsReqToMakeAStringPalindromic minCharsReqToMakeAStringPalindromic;
     @BeforeEach
     void setUp() {
-        minCharsReqToMakeAStringPalindromic = new MinCharsReqToMakeAStringPalindromic();
     }
 
     @Test
@@ -20,8 +18,8 @@ class MinCharsReqToMakeAStringPalindromicTest {
     @Test
     void minReqPalindromic() {
         assertAll(
-                () -> assertEquals(2, minCharsReqToMakeAStringPalindromic.minReqPalindromic("ABC")),
-                () -> assertEquals(2, minCharsReqToMakeAStringPalindromic.minReqPalindromic("AACECAAAA"))
+                () -> assertEquals(2, MinCharsReqToMakeAStringPalindromic.minReqPalindromic("ABC")),
+                () -> assertEquals(2, MinCharsReqToMakeAStringPalindromic.minReqPalindromic("AACECAAAA"))
         );
     }
 }
